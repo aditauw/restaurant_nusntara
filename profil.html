@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tentang Kami | Restoran Nusantara</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #fff;
+    }
+    /* Hero Header */
+    .hero-header {
+      background: url('https://images.unsplash.com/photo-1601050690597-df9a57b3d1e7?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 150px 20px;
+      position: relative;
+    }
+    .hero-header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+    .hero-header h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .hero-header p {
+      position: relative;
+      z-index: 2;
+      font-size: 1.25rem;
+    }
+    /* Section */
+    .content-section h2 {
+      color: #d32f2f;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .content-section p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #444;
+    }
+    /* Card */
+    .card img {
+      border-radius: 10px 10px 0 0;
+    }
+    /* Footer */
+    footer {
+      background-color: #212121;
+      color: #fff;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+      <img src="logo-search-grid-2x.png" 
+           alt="Logo Restoran" 
+           width="40" 
+           height="40" 
+           class="me-2 rounded-circle border border-light">
+      Restoran Nusantara
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link active" href="profil.html">Profil</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Hero Header -->
+<section class="hero-header">
+  <div class="container position-relative">
+    <h1>Tentang Kami</h1>
+    <p>Kenali lebih dekat Restoran Nusantara dan kisah cita rasa kami 🍴</p>
+  </div>
+</section>
+
+<!-- Profil Section -->
+<section class="content-section py-5">
+  <div class="container">
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="interior.avif" alt="Restoran Nusantara Interior" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h2>Visi & Misi</h2>
+        <p><strong>Visi:</strong> Menjadi restoran kuliner Indonesia yang dikenal luas karena cita rasa autentik dan pengalaman makan yang berkesan.</p>
+        <p><strong>Misi:</strong></p>
+        <ul>
+          <li>Menyajikan hidangan khas Nusantara dengan bahan pilihan terbaik.</li>
+          <li>Mengutamakan pelayanan yang ramah dan cepat.</li>
+          <li>Menghadirkan suasana makan yang nyaman dan modern.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <h2 class="mb-4">Tim Kami</h2>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow border-0">
+          <img src="arnold.jpg" class="card-img-top" alt="Chef 1">
+          <div class="card-body">
+            <h5 class="card-title">Chef Arman</h5>
+            <p class="card-text text-muted">Kepala Koki • Spesialis Masakan Padang</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow border-0">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Chef 2">
+          <div class="card-body">
+            <h5 class="card-title">Chef Ayu</h5>
+            <p class="card-text text-muted">Koki Soto & Hidangan Tradisional</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow border-0">
+          <img src="chef dimas.jpeg" class="card-img-top" alt="Chef 3">
+          <div class="card-body">
+            <h5 class="card-title">Chef Dimas</h5>
+            <p class="card-text text-muted">Ahli Grill & Sate Tradisional</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p class="mb-0">© 2025 Restoran Nusantara | Dibuat dengan ❤️ oleh Tim Kuliner Indonesia</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
